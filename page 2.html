@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<style> 
+        body {
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            color: #605399;
+            font-size: larger;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 30px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .option {
+            padding: 10px;
+            background-color: #e4def9;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .option:hover {
+            background-color: #e4def9;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        body {
+            margin: 10;
+            text-align: center;
+        }
+        img {
+            max-width: 30%;
+            height: auto;
+            display: inline-block;
+            border-radius: 20px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+</style>
+<body>
+    <img src="download (11).jpg">
+    <br>
+    <video width="640" height="360" controls>
+        <source src="video_2024-01-05_02-39-47.mp4" type="video/mp4">
+    </video>
+    <br>
+    <br>
+    <img src="download (8).jpg" alt="">
+    <div class="quiz-container">
+
+        <div class="question1" id="question1"> are you happy ?</div>
+        <div class="options" id="options">
+            <div class="option" onclick="checkAnswer(this)">Yes</div>
+            <div class="option" onclick="checkAnswer(this)">No</div>
+        </div>
+
+    
+        <div class="result" id="result"></div>
+    </div>
+    <br>
+    <br>
+        <p>in the end, i didnt do much, but i love you and i am sorry for the failure</p>
+        <img src="Premium Vector _ Kitty cat family greeting cartoon doodle illustration.jpg">
+    
+    <script>
+        function checkAnswer(selectedoption) {
+            var correctAnswer = "Yes";
+            var selectedAnswer = selectedoption.textContent;
+            if (selectedAnswer === correctAnswer) {
+                document.getElementById('result').innerHTML = 'million feelings, all for one person<br>thats you';
+            } else {
+                document.getElementById('result').innerHTML = 'bro go shorty its your birthday, we are gonna party like its your birthday!';
+            }
+        }
+    </script>
+
+</body>
+</html>
